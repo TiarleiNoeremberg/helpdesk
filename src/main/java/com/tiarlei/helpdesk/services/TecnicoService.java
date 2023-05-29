@@ -1,5 +1,6 @@
 package com.tiarlei.helpdesk.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,5 +20,9 @@ public class TecnicoService {
 		Optional<Tecnico> obj = repository.findById(id);
 		//return obj.orElse(null);	//Caso objeto não encontrado, retorne null.
 		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! " + id));
+	}
+
+	public List<Tecnico> findAll() {
+		return repository.findAll();
 	}
 }
