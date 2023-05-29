@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tiarlei.helpdesk.domain.Tecnico;
+import com.tiarlei.helpdesk.domain.dtos.TecnicoDTO;
 import com.tiarlei.helpdesk.services.TecnicoService;
 
 @RestController
@@ -18,8 +19,11 @@ public class TecnicoResource {
 	private TecnicoService service;
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Tecnico> findById(@PathVariable Integer id){
+	public ResponseEntity<TecnicoDTO> findById(@PathVariable Integer id){
 		Tecnico obj = this.service.findById(id);
-		return ResponseEntity.ok().body(obj);
+		//return ResponseEntity.ok().body(obj);	//obj do tipo Tecnico nao e compativel
+		//com TecnicoDTO, desta forma criaremos um objeto TecnicoDTO que realizara a conversao
+		//por meio da sentenca abaixo.
+		return ResponseEntity.ok().body(new TecnicoDTO (obj));
 	}
 }
