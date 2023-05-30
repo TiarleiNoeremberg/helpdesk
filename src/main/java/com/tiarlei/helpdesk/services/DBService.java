@@ -35,7 +35,6 @@ public class DBService {
 		Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "737.286.470-47", "shannon@mail.com", "123");
 		Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "575.640.860-68", "lee@mail.com", "123");
 		Tecnico tec5 = new Tecnico(null, "Linus Torvalds", "812.839.840-75", "linus@mail.com", "123");
-
 		
 		Cliente cli1 = new Cliente(null, "Santos Dumond", "114.866.520-00", "santosdu@hotmail.com", "123");
 		Cliente cli2 = new Cliente(null, "Albert Einstein", "878.125.920-49", "einstein@mail.com", "123");
@@ -56,5 +55,4 @@ public class DBService {
 		chamadoRepository.saveAll(Arrays.asList(c1, c2, c3, c4, c5, c6));
 		
 	}
-
 }
