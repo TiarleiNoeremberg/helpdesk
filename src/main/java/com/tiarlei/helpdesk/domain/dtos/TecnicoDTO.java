@@ -28,6 +28,7 @@ public class TecnicoDTO implements Serializable {
 
 	public TecnicoDTO() {
 		super();
+		addPerfis(Perfil.CLIENTE);
 	}
 
 	public TecnicoDTO(Tecnico obj) {
@@ -41,6 +42,7 @@ public class TecnicoDTO implements Serializable {
 		//Solucionando o problema da linha 20 "protected Set<Integer> perfis = new HashSet<>();"
 		//fazendo a conversão do tipo primitivo.
 		this.dataCriacao = obj.getDataCriacao();
+		addPerfis(Perfil.CLIENTE);
 	}
 
 	public Integer getId() {
