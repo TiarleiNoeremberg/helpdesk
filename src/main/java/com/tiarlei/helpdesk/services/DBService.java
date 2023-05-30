@@ -29,20 +29,20 @@ public class DBService {
 	
 	public void instanciaDB() {
 		
-		Tecnico tec1 = new Tecnico(null, "Tiarlei Noeremberg", "487.965.777-98", "tiarlei@gmail.com", "123");
+		Tecnico tec1 = new Tecnico(null, "Tiarlei Noeremberg", "809.932.000-01", "tiarlei@gmail.com", "123");
 		tec1.addPerfil(Perfil.ADMIN);
-		Tecnico tec2 = new Tecnico(null, "Richard Stallman", "903.347.070-56", "stallman@mail.com", "123");
-		Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "271.068.470-54", "shannon@mail.com", "123");
-		Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "162.720.120-39", "lee@mail.com", "123");
-		Tecnico tec5 = new Tecnico(null, "Linus Torvalds", "778.556.170-27", "linus@mail.com", "123");
+		Tecnico tec2 = new Tecnico(null, "Richard Stallman", "866.038.320-62", "stallman@mail.com", "123");
+		Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "737.286.470-47", "shannon@mail.com", "123");
+		Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "575.640.860-68", "lee@mail.com", "123");
+		Tecnico tec5 = new Tecnico(null, "Linus Torvalds", "812.839.840-75", "linus@mail.com", "123");
 
 		
-		Cliente cli1 = new Cliente(null, "Santos Dumond", "241.326.888-94", "santosdu@hotmail.com", "123");
-		Cliente cli2 = new Cliente(null, "Albert Einstein", "111.661.890-74", "einstein@mail.com", "123");
-		Cliente cli3 = new Cliente(null, "Marie Curie", "322.429.140-06", "curie@mail.com", "123");
-		Cliente cli4 = new Cliente(null, "Charles Darwin", "792.043.830-62", "darwin@mail.com", "123");
-		Cliente cli5 = new Cliente(null, "Stephen Hawking", "177.409.680-30", "hawking@mail.com", "123");
-		Cliente cli6 = new Cliente(null, "Max Planck", "081.399.300-83", "planck@mail.com", "123");
+		Cliente cli1 = new Cliente(null, "Santos Dumond", "114.866.520-00", "santosdu@hotmail.com", "123");
+		Cliente cli2 = new Cliente(null, "Albert Einstein", "878.125.920-49", "einstein@mail.com", "123");
+		Cliente cli3 = new Cliente(null, "Marie Curie", "009.507.300-09", "curie@mail.com", "123");
+		Cliente cli4 = new Cliente(null, "Charles Darwin", "737.834.090-12", "darwin@mail.com", "123");
+		Cliente cli5 = new Cliente(null, "Stephen Hawking", "370.506.910-11", "hawking@mail.com", "123");
+		Cliente cli6 = new Cliente(null, "Max Planck", "585.833.510-15", "planck@mail.com", "123");
 	
 		Chamado c1 = new Chamado(null, Prioridade.MEDIA, Status.ANDAMENTO, "Chamado 01", "Primeiro chamado", tec1, cli1);
 		Chamado c2 = new Chamado(null, Prioridade.ALTA, Status.ABERTO, "Chamado 2", "Teste chamado 2", tec1, cli2);
