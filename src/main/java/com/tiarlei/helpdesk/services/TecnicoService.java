@@ -3,6 +3,8 @@ package com.tiarlei.helpdesk.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +15,6 @@ import com.tiarlei.helpdesk.repositories.PessoaRepository;
 import com.tiarlei.helpdesk.repositories.TecnicoRepository;
 import com.tiarlei.helpdesk.services.exception.DataIntegrityViolationException;
 import com.tiarlei.helpdesk.services.exception.ObjectNotFoundException;
-
-import jakarta.validation.Valid;
 
 @Service
 public class TecnicoService {

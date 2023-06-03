@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,8 +17,6 @@ import com.tiarlei.helpdesk.domain.enums.Prioridade;
 import com.tiarlei.helpdesk.domain.enums.Status;
 import com.tiarlei.helpdesk.repositories.ChamadoRepository;
 import com.tiarlei.helpdesk.services.exception.ObjectNotFoundException;
-
-import jakarta.validation.Valid;
 
 @Service
 public class ChamadoService {
@@ -48,8 +48,6 @@ public class ChamadoService {
 		oldObj = newChamado(objDTO);
 		return repository.save(oldObj);
 	}
-	
-	
 	
 	private Chamado newChamado(ChamadoDTO obj) {
 		Tecnico tecnico = tecnicoService.findById(obj.getTecnico());

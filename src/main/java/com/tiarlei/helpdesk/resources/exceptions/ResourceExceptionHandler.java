@@ -1,5 +1,7 @@
 package com.tiarlei.helpdesk.resources.exceptions;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -9,8 +11,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.tiarlei.helpdesk.services.exception.DataIntegrityViolationException;
 import com.tiarlei.helpdesk.services.exception.ObjectNotFoundException;
-
-import jakarta.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
