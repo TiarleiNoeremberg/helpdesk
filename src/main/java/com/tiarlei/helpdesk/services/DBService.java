@@ -32,9 +32,10 @@ public class DBService {
 		
 		Tecnico tec1 = new Tecnico(null, "Tiarlei Noeremberg", "809.932.000-01", "tiarlei@gmail.com", encoder.encode("123"));
 		tec1.addPerfil(Perfil.ADMIN);
+		
 		Tecnico tec2 = new Tecnico(null, "Richard Stallman", "866.038.320-62", "stallman@mail.com", encoder.encode("123"));
 		Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "737.286.470-47", "shannon@mail.com", encoder.encode("123"));
-		Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "575.640.860-68", "lee@mail.com", encoder.encode("123"));
+		Tecnico tec4 = new Tecnico(null, "Tim Berners-Lee", "516.232.000-59", "lee@mail.com", encoder.encode("123"));
 		Tecnico tec5 = new Tecnico(null, "Linus Torvalds", "812.839.840-75", "linus@mail.com", encoder.encode("123"));
 		
 		Cliente cli1 = new Cliente(null, "Santos Dumond", "114.866.520-00", "santosdu@hotmail.com", encoder.encode("123"));
