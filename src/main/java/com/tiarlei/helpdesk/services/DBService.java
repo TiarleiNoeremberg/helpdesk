@@ -55,6 +55,5 @@ public class DBService {
 		tecnicoRepository.saveAll(Arrays.asList(tec1, tec2, tec3, tec4, tec5));
 		clienteRepository.saveAll(Arrays.asList(cli1, cli2, cli3, cli4, cli5, cli6));
 		chamadoRepository.saveAll(Arrays.asList(c1, c2, c3, c4, c5, c6));
-		
 	}
 }
