@@ -1,3 +1,10 @@
+CREATE DATABASE helpdesk
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
 CREATE TABLE IF NOT EXISTS chamado
 (
     id serial NOT NULL primary key,
